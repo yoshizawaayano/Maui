@@ -132,19 +132,37 @@ body {
 .contact-form-btn {
     display: inline-block;
     width: 220px;
-    height: 30px;
-    line-height: 30px;
-    padding: 0;
+    height: 55px;
+    line-height: 25px; /* 垂直中央揃え */
+    padding: 2;
     background-color: #E88B97;
-    color: white;
+    color: rgb(255, 255, 255); /* 文字色を白にして目立たせる */
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 12px;
-    transition: background-color 0.3s ease;
+    border-radius: 30px; /* ボーダーの角を丸く */
+    font-size: 16px; /* フォントサイズを大きく */
+    font-weight: bold; /* 太字にして強調 */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* ホバー時に変化を追加 */
     box-sizing: border-box;
     position: relative;
     text-align: center;
+    text-transform: uppercase; /* 文字を大文字にして強調 */
+    border: 2px solid #E88B97; /* ボタンにボーダーを追加 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* ボタンにシャドウ効果を追加 */
+    max-width: 600px; /* 最大幅を設定 */
+    margin: 0 auto; /* ボタンを中央に配置 */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* 文字に影をつけて目立たせる */
 }
+
+.contact-form-btn:hover {
+    background-color: #f59c42; /* ホバー時の背景色 */
+    transform: translateY(-3px); /* 少し上に浮かせてインタラクティブ感を強化 */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* ホバー時にシャドウを強化 */
+    color: #fff; /* ホバー時に文字色を白に */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* ホバー時に文字の影を強調 */
+}
+
+
+
 
 .contact-form-btn::after {
     content: '';
